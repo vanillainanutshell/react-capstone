@@ -8,9 +8,9 @@ const Home = () => {
   const animeList = useSelector((state) => state.animeReducer);
   const dispatch = useDispatch();
 
-  const displayAnimes = () => {
+  const displayAnimes = (animeList) => (
     (animeList.anime.map((anime) => (
-      <div key={anime.rank} rank={anime.rank}>
+      <div key={anime.rank} id={anime.rank}>
         <NavLink key={anime.rank} to={`${anime.title}`}>
           <div>
             <FiArrowRightCircle />
@@ -18,14 +18,14 @@ const Home = () => {
         </NavLink>
         <h3>{anime.title}</h3>
         <h4>
-          Rank:
+          Score:
           {anime.score}
         </h4>
       </div>
-    )));
-  };
+    )))
+  );
 
-  const displayFiltered = () => {
+  const displayFiltered = () => (
     (animeList.filtered.map((anime) => (
       <div key={anime.rank} rank={anime.rank}>
         <NavLink key={anime.rank} to={`/${anime.title}`}>
@@ -35,12 +35,12 @@ const Home = () => {
         </NavLink>
         <h3>{anime.title}</h3>
         <h4>
-          Rank:
+          Score:
           {anime.score}
         </h4>
       </div>
-    )));
-  };
+    )))
+  );
 
   const searchAnime = (e) => {
     const saveList = animeList;
@@ -61,10 +61,10 @@ const Home = () => {
       </div>
       <div>
         {
-                animeList.filtered.length === 0
-                  ? displayAnimes(animeList)
-                  : displayFiltered(animeList)
-            }
+            animeList.filtered.length === 0
+              ? displayAnimes(animeList)
+              : displayFiltered(animeList)
+        }
       </div>
     </div>
   );
