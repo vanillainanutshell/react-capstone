@@ -9,17 +9,17 @@ const initialState = {
 };
 
 export const animeArr = (response) => {
-  response.map((anime) => (
+  response.data.map((animedata) => (
     initialState.anime.push({
-      rank: anime.rank,
-      title: anime.title,
-      score: anime.score,
+      rank: animedata.rank,
+      title: animedata.title,
+      score: animedata.score,
       details: {
-        type: anime.type,
-        source: anime.source,
-        episodes: anime.episodes,
-        status: anime.status,
-        year: anime.season,
+        type: animedata.type,
+        source: animedata.source,
+        episodes: animedata.episodes,
+        status: animedata.status,
+        year: animedata.season,
       },
     })
   ));

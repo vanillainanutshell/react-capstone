@@ -12,7 +12,7 @@ const NavBar = () => (
         </NavLink>
         <h4>year</h4>
       </div>
-      <h4>app name</h4>
+      <h4>Top Animes</h4>
       <div>
         <HiMicrophone />
         <HiCog />

@@ -17,7 +17,10 @@ const Home = () => {
           </div>
         </NavLink>
         <h3>{anime.title}</h3>
-        <h4>Rank:</h4>
+        <h4>
+          Rank:
+          {anime.score}
+        </h4>
       </div>
     )));
   };
@@ -31,7 +34,10 @@ const Home = () => {
           </div>
         </NavLink>
         <h3>{anime.title}</h3>
-        <h4>Rank:</h4>
+        <h4>
+          Rank:
+          {anime.score}
+        </h4>
       </div>
     )));
   };
@@ -39,8 +45,8 @@ const Home = () => {
   const searchAnime = (e) => {
     const saveList = animeList;
     const searchString = e.target.value.toUpperCase();
-    const newArray = animeList.anime.filter((anime) => (
-      anime.title.toUpperCase().includes(searchString)
+    const newArray = animeList.anime.filter((animedata) => (
+      animedata.title.toUpperCase().includes(searchString)
     ));
     dispatch(filterAnime(newArray, saveList));
   };

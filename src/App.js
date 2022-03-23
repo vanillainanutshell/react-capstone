@@ -11,18 +11,18 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!animeList.length) {
-      dispatch(setAnime());
-    }
+    dispatch(setAnime());
   }, []);
-  console.log(animeList);
+
   return (
     <div className="App">
       <Router>
         <NavBar />
         <Routes>
-          <Route path="*/" element={<Home />} />
-          <Route path="/details" element={<Details />} />
+          <Route path="/" element={<Home />} />
+          { animeList.anime.map((anime) => (
+            <Route key={anime.title} path={`/${anime.title}`} element={<Details />} />
+          ))}
         </Routes>
       </Router>
     </div>
