@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Top AOE2:DE Players
+# Top ranked Animes
 
 > Simple mobile SPA that shows the current anime rank. You can filter by name and see more information about them.
 
