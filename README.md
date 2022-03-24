@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Top ranked Animes
+# Top Rated Animes
 ![image](https://user-images.githubusercontent.com/88060989/160023663-61495584-e831-4517-a95a-d756fedca4ea.png)
 
 > Simple mobile SPA that shows the current anime rank. You can filter by name and see more information about them.
