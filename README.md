@@ -15,7 +15,7 @@
 
 ## Live view
 
-- Follow the [link]() to see the deployed page!
+- Follow the [link](https://comforting-semolina-ab3317.netlify.app) to see the deployed page!
 
 ## Video
 
