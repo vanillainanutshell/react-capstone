@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           { animeList.anime.map((anime) => (
-            <Route key={anime.title} path={`/${anime.title}`} element={<Details props={anime} />} />
+            <Route key={anime.title} path={`/${anime.rank}`} element={<Details props={anime} />} />
           ))}
         </Routes>
       </Router>

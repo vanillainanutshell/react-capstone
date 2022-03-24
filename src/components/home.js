@@ -11,7 +11,7 @@ const Home = () => {
   const displayAnimes = (animeList) => (
     (animeList.anime.map((anime) => (
       <div key={anime.rank} id={anime.rank}>
-        <NavLink key={anime.rank} to={`${anime.title}`}>
+        <NavLink key={anime.rank} to={`/${anime.rank}`}>
           <div>
             <FiArrowRightCircle />
           </div>
@@ -28,7 +28,7 @@ const Home = () => {
   const displayFiltered = () => (
     (animeList.filtered.map((anime) => (
       <div key={anime.rank} rank={anime.rank}>
-        <NavLink key={anime.rank} to={`/${anime.title}`}>
+        <NavLink key={anime.rank} to={`/${anime.rank}`}>
           <div>
             <FiArrowRightCircle />
           </div>
