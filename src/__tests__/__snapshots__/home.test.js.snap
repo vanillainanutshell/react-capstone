@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sanpshoot of the Home renders correctly 1`] = `
+<div>
+  <div
+    className="headline"
+  >
+    <h1>
+      Top Rated Animes
+    </h1>
+  </div>
+  <div
+    className="stats"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search Anime"
+    />
+  </div>
+  <div
+    className="content"
+  />
+</div>
+`;
