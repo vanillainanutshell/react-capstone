@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './styles/details.css';
 
 const Details = ({ props }) => {
   const detailsArr = [
@@ -15,12 +16,12 @@ const Details = ({ props }) => {
 
   for (let i = 0; i < detailsArr.length; i += 1) {
     detailsDisplay.push(
-      <li key={i} className="">
-        <span>
+      <li key={i} className="detailList">
+        <span className="infoText">
           {detailsArr[i]}
           :
         </span>
-        <span>
+        <span className="infoText">
           {infoArr[i]}
         </span>
       </li>,
@@ -29,8 +30,11 @@ const Details = ({ props }) => {
 
   return (
     <div key={props.title}>
-      <div>
+      <div className="headline">
         <h1>{props.title}</h1>
+      </div>
+      <div className="details">
+        <h4>Anime Details</h4>
       </div>
       <ul>
         {detailsDisplay}
