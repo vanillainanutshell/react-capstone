@@ -19,7 +19,7 @@
 
 ## Video
 
-[Link]() to video on the features.
+- [Link]() to video on the features.
 
 ### Install
 
