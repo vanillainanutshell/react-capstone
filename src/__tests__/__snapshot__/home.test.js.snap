@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sanpshoot of the Home renders correctly 1`] = `
+<div>
+  <div
+    className="headline"
+  >
+    <img
+      alt="knight"
+      className="knight"
+      src="knight.gif"
+    />
+    <h1>
+      Current Top 10 AOE2:DE Players
+    </h1>
+    <img
+      alt="knight"
+      className="knight"
+      src="knight.gif"
+    />
+  </div>
+  <div
+    className="stats_title_cnt"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Player name"
+    />
+  </div>
+  <div
+    className="content_cnt"
+  />
+</div>
+`;
