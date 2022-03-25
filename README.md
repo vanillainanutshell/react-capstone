@@ -20,7 +20,7 @@
 
 ## Video
 
-- [Link]() to video on the features.
+- [Link](https://www.loom.com/share/ac4de9076a6d4638aaec62ea2ce83bdf) to video on the features.
 
 ### Install
 
